@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeLeaf.org/thymeLeaf-extras-springsecurity5">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/mycss.css}"> 
+<title>Insert title here</title>
+</head>
+<body>
+<div id="newContact">
+<h1>Contact List</h1>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Phone Number</th>
+			<th>Address</th>
+			<th>Email</th>
+			<th>Role</th>
+		</tr>
+		<tr th:each="c:${contacts}">
+		<td th:text="${c.name}"></td>
+		<td th:text="${c.phone}"></td>
+		<td th:text="${c.address}"></td>
+		<td th:text="${c.email}"></td>
+		<td th:text="${c.role}"></td>
+		</tr>
+	</table>
+	Go back to the<a href="" th:href="@{/guest}" > Guest Page</a><br>
+	Go back to the<a href="" th:href="@{/guest}" > Member Page</a><br>
+	Go back to the <a th:href="@{/admin}">Administrator Page</a><br><br>
+	</div>
+</body>
+</body>
+</html>

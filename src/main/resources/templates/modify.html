@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/mycss.css}" >
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Contact</title>
+</head>
+<body>
+<h1>Modify Contact</h1>
+<form action="#" th:action="@{/modify}" th:object="${contact}" method="get">
+<input type="hidden" th:field="*{id}"/>
+<p>Name: <input type="text" th:field="*{name}"/></p><br>
+<p>Phone: <input type="text" th:field="*{phone}"/></p>
+<p>Address: <input type="text" th:field="*{address}"/></p><br>
+<p>Email: <input type="text" th:field="*{email}"/></p>
+<p><input type="submit" value="Edit Contact"></p>
+</form>
+<a href="/view" th:href="@{/view}" >View Contacts</a>
+</body>
+</html>

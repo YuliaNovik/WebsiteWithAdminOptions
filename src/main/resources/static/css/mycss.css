@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+body {
+	text-align: center;
+	padding-top:50px;
+	background-color: #c7e4f2;
+}
+#form{
+
+	text-align:center
+}
+#newContact{
+	padding-left : 150px;
+	padding-top:50px;
+}
+table{
+	border: dashed;
+}
+ th, td{
+	border: 1px solid #8000ff;
+}
+
+input[type=text]{
+	background-color:#dcdfe3;
+}
+input[type=password] {
+	background-color:#dcdfe3;
+}
+input[type=submit] {
+	background-color:#7e5bba;
+}
+input[type=submit]:hover {
+	background-color:#6643a3;
+}
+.alert{
+	color:red;
+}
+.goodAlert{
+	color:blue;
+}
